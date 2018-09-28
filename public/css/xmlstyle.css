@@ -1,0 +1,32 @@
+@font-face {
+    font-family: MachineC; /* Гарнитура шрифта */
+    src: url(../fonts/MachineC.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+NAME,RULES,IRULES,HELLO{    
+    display: block;    
+    border-style: none;  
+    width: auto;
+}
+NAME, HELLO{
+    font-family:MachineC;
+}
+HELLO{
+    font-size: 16pt;
+}
+NAME{
+    color: #CC0000;
+    font-size: 18pt;
+}
+IRULES{
+    font-family:Roboto-Regular; 
+    font-size: 14pt; 
+    color: #CC0000; 
+}
+RULES {    
+    font-family:Roboto-Regular;    
+    font-size: 12pt;
+}
