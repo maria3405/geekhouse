@@ -25,3 +25,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## GEEKHOUSE
+## Информация по установке
+- cd domains
+- git clone https://github.com/maria3405/geekhouse.git
+- cd geekhouse
+- composer self-update
+- composer install
+- запустить сайт из папки
