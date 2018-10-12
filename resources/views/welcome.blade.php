@@ -1,47 +1,6 @@
-<!doctype html>
-<html>
-<head><meta charset = 'utf-8'>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125628399-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-125628399-1');
-</script>
-<title>Geekhouse</title>    
-    <meta name="keywords" content="гик geek техника наука игры игра фильмы фильм сериалы сериал комиксы комикс аниме культура" />
-    <meta name="description" content="Сайт для гигов. Здесь вы можете найти интересные новости о технике, науке, играх, фильмах, сериалах, комисах, аниме и культере.">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
-    <link href="{{asset('/public/css/style.css')}}" rel="stylesheet" type="text/css" media="screen"/>
-    <script src="js/script.js"></script>
-</head>
-<body>
-	<header>
-		<div id="logo">
-            <a href="index.html">Geek<span class="colortext">House</span></a>
-		</div>
-        <div class="grid">
-             <div id="menu">
-                 <nav tabindex="0">
-                    <div tabindex="0">
-                        <a href="tech.html">Техника</a>
-                        <a href="">Наука</a>
-                        <a href="">Игры</a>
-                        <a href="">Фильмы</a>
-                        <a href="">Сериалы</a>
-                        <a href="">Комиксы</a>
-                        <a href="">Аниме</a>
-                        <a href="">Культура</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-	</header>
-    <hr>
-    <div class="grid grid-pad">
-        <div class="col-1-2">
+@extends("layouts.base")
+@section("content") 
+ <div class="col-1-2">
             <div class="news">
                 <a href ="recenziya-na-film-liga-spravedlivosti.html">
                     <img src="images/1.jpg" alt="Лига Справедливости" />
@@ -78,52 +37,4 @@
                 <hr>
             </div>
         </div>
-    </div>
-    <div id="preloader">
-        <div id="preloader_preload"></div>    
-    </div>
-    <script type="text/javascript">
-        var preloader = document.getElementById("preloader_preload");
-        function fadeOutnojquery(el) {
-            el.style.opacity = 1;
-            var interpreloader = setInterval(function() {
-                el.style.opacity = el.style.opacity - 0.05;
-                if (el.style.opacity <=0.05)
-                { 
-                    clearInterval(interpreloader);
-                    preloader.style.display = "none";
-                }
-            },16);
-        }
-        window.onload = function()
-        {
-            setTimeout(function()
-                {
-                    fadeOutnojquery(preloader);
-                },500);
-        };
-    </script>
-    <footer>    
-        <div class="grid">
-            <table>
-                <tr>
-                    <th>
-                        <a href="xml/info.xml">Правила сообщества</a>   
-                    </th>
-                    <th>
-                        Ищите в социальных сетях:
-                    </th>
-                    <th>                         
-                        <a href="https://www.instagram.com/geekhousenews/"><img src="svg/instagram.svg" class="svg"/></a>
-                        <a href="http://vk.com/"><img src="svg/vk.svg" class="svg"/></a> 
-                        <a href="http://facebook.com/"><img src="svg/facebook.svg" class="svg"/></a>
-                    </th>
-                    <th>
-                        <a href="xml/sitemap.xml">Карта сайта </a> 
-                    </th>
-                </tr>
-            </table>
-        </div>
-    </footer>
-</body>
-</html>
+@endsection
